@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 str = "Python is an interpreted, interactive, object-oriented programming\
  language that combines remarkable power with very clear syntax"
-print(str[39:66] + str[106:111] + str[:6])
+words = str.split()  # splits string into a list of words
+print(words[7] + " " + words[8] + " " + words[9] + " " + words[0])
