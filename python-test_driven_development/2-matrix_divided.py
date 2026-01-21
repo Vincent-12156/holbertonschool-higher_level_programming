@@ -30,3 +30,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     return [[round(i / div, 2) for i in row] for row in matrix]
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
