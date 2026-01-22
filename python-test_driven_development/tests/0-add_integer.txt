@@ -15,8 +15,9 @@
 >>> add_integer(-5, -3)
 -8
 
->>> add_integer(0, 0)
-0
+>>> add_integer("", 4)
+Traceback (most recent call last):
+ValueError: a must be an integer
 
 >>> add_integer(4, "School")
 Traceback (most recent call last):
