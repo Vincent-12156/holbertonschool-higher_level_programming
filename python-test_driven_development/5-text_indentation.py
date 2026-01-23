@@ -16,12 +16,12 @@ def text_indentation(text):
     if text == "":
         raise TypeError("text must be a string")
     new_text = ""
-    for char in text:
-        if char == " " and new_text == "":
+    for c in text:
+        if c == " " and new_text == "":
             continue
-        new_text += char
+        new_text += c
 
-        if char in ".?:":
+        if c in ".?:":
             print(new_text)
             print()
             new_text = ""
