@@ -10,10 +10,11 @@ def say_my_name(first_name, last_name=""):
     """
     function that prints My name is first name and last name
     """
-    if first_name == "":
-        raise ValueError("first_name must be a string")
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
-    print("My name is {:s} {:s}".format(first_name, last_name))
+    name = first_name
+    if last_name != "":
+        name += " " + last_name
+    print("My name is", name)
