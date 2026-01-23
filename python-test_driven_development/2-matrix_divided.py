@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
 Docstring for python-test_driven_development.2-matrix_divided
+matrix: list of lists of integers or floats
+div: number (integer or float)
 """
 
 
 def matrix_divided(matrix, div):
     """
     Docstring for matrix_divided
-    matrix: list of lists of integers or floats
-    div: number (integer or float)
     """
     if (not isinstance(matrix, list) or
             matrix == [] or
@@ -31,7 +31,3 @@ def matrix_divided(matrix, div):
 
     return [[round(i / div, 2) for i in row] for row in matrix]
 
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
