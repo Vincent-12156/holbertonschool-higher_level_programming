@@ -13,7 +13,7 @@ Texte2:
 
 >>> text_indentation("")
 Traceback (most recent call last):
-ValueError: text must be a string
+TypeError: text must be a string
 
 >>> text_indentation(1)
 Traceback (most recent call last):
