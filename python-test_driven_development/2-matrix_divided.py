@@ -30,4 +30,3 @@ def matrix_divided(matrix, div):
                     "of integers/floats")
 
     return [[round(i / div, 2) for i in row] for row in matrix]
-
